@@ -112,6 +112,7 @@ body {
     font-size: 16px;
     line-height: 1.687;
     color: #5a5a5a;
+    overflow-x: hidden;
 }
 
 .wrapper {
