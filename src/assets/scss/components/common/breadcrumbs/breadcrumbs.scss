@@ -1,0 +1,38 @@
+.breadcrumbs {
+	position: relative;
+	
+	background-color: rgba($bg-2, .5);
+	padding: 13px 0 14px;
+
+	&--margin {
+		margin-bottom: -55px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item + &__item {
+		margin-left: 10px;
+	}
+
+	&__item {
+		font-size: 14px;
+		line-height: 2;
+		color: $link-4;
+		position: relative;
+
+		&:not(:last-child)::after {
+			position: absolute;
+			top: 0;
+			right: -6px;
+	
+			content: '/';
+		}
+	}
+}
+
+
+
+  

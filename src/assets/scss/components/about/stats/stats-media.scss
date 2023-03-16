@@ -1,0 +1,35 @@
+@include desktop-big {
+	.stats {
+		&__inner {
+			justify-content: center;
+		}
+
+		&__img {
+			display: none;
+		}
+
+		&__content {
+			flex-shrink: 1;
+		}
+	}
+}
+
+@include laptop {
+	.stats {
+		&__title {
+			font-size: 30px;
+		}
+	}
+}
+
+@include mobile {
+	.stats {
+		&::after {
+			height: 520px;
+		}
+		
+		&__title {
+			font-size: 24px;
+		}
+	}
+}

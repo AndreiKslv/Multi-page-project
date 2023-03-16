@@ -1,0 +1,25 @@
+@import 'common';
+
+
+
+@import 'components/common/header';
+@import 'components/index(home)/promo';
+@import 'components/index(home)/collection';
+@import 'components/index(home)/interier';
+@import 'components/index(home)/process';
+@import 'components/index(home)/blog';
+@import 'components/common/mail-link/mail-link';
+@import 'components/common/footer';
+
+
+// Mini-Blocks
+@import 'components/common/rightside-menu';
+@import 'components/common/form';
+@import 'components/common/gallery-one';
+@import 'components/common/gallery';
+
+
+// Logics
+@import 'logics/burger-menu';
+@import 'logics/slick';
+@import 'logics/my-slick';

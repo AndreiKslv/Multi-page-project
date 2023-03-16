@@ -1,0 +1,46 @@
+.contact-slider {
+	max-width: 1920px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+	&__link {
+		position: relative;
+		margin-bottom: 35px;
+
+		&:hover .contact-slider__title {
+			opacity: 1;
+			background: rgba(#fff, .7)
+		}
+	}
+
+	&__title {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@extend %s-title;
+		text-align: center;
+
+		opacity: 0;
+		transition: all .3s ease;
+	}
+
+  }
+
+.slick-track {
+	display: flex !important;
+	gap: 17px;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+  

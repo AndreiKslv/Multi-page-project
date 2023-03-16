@@ -1,0 +1,115 @@
+.footer {
+	background-color: $bg-2;
+
+	&--margin-top {
+		margin-top: 70px;
+	}
+
+	&__top {
+		padding: 60px 0 80px;
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+	}
+
+	&__title {
+		@extend %s-title;
+		margin-bottom: 14px;
+	}
+
+	&__text {
+		max-width: 476px;
+		margin-bottom: 16px;
+	}
+
+	&__mail-link {
+		margin-bottom: 22px;
+	}
+
+	&__messengers {
+		margin: 0 auto;
+	}
+
+	&__messengers &__item {
+		padding-left: 28px;
+		position: relative;
+	}
+
+	&__messengers &__item:nth-child(1)::before {
+		position: absolute;
+		top: 7px;
+		left: 0;
+
+		content: '';
+		width: 16px;
+		height: 16px;
+		background: url(./../images/common/messengers/facebook.svg);
+	}
+
+	&__messengers &__item:nth-child(2)::before {
+		position: absolute;
+		top: 8px;
+		left: 0;
+
+		content: '';
+		width: 14px;
+		height: 14px;
+		background: url(./../images/common/messengers/instagram.svg);
+	}
+
+	&__messengers &__item:nth-child(3)::before {
+		position: absolute;
+		top: 6px;
+		left: 0;
+
+		content: '';
+		width: 16px;
+		height: 16px;
+		background: url(./../images/common/messengers/pinterest.svg);
+	}
+
+	&__messengers &__item:nth-child(4)::before {
+		position: absolute;
+		top: 7px;
+		left: 0;
+
+		content: '';
+		width: 14px;
+		height: 14px;
+		background: url(./../images/common/messengers/whatsapp.svg);
+	}
+
+	&__messengers &__item:nth-child(5)::before {
+		position: absolute;
+		top: 9px;
+		left: 0;
+
+		content: '';
+		width: 18px;
+		height: 12px;
+		background: url(./../images/common/messengers/youtube.svg);
+	}
+
+	&__item + &__item {
+		margin-top: 15px;
+	}
+
+	&__link {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 2;
+		color: $link-3;
+	}
+
+	&__info {
+		margin: 0 auto;
+	}
+
+	&__bottom {
+		padding: 40px 0;
+		background-color: $bg-3;
+		text-align: center;
+		color: $link-1;
+	}
+}
+  

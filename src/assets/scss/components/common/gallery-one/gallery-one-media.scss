@@ -1,0 +1,55 @@
+@include desktop-gallery-one {
+	.gallery-one {
+		&__title {
+			font-size: 15px;
+		}
+
+		&__text {
+			font-size: 12px;
+		}
+	}
+}
+
+@include desktop {
+	.gallery-one {
+		&__title {
+			font-size: 14px;
+		}
+
+		&__text {
+			font-size: 11px;
+		}
+	}
+
+	.slick-track {
+		gap: 15px;
+	}
+}
+
+@include laptop {
+	.gallery-one {
+		&__title {
+			font-size: 10px;
+		}
+
+		&__text {
+			font-size: 8px;
+		}
+	}
+
+	.slick-track {
+		gap: 10px;
+	}
+}
+
+@include mobile {
+	.gallery-one {
+		&__title {
+			font-size: 13px;
+		}
+
+		&__text {
+			font-size: 10px;
+		}
+	}
+}

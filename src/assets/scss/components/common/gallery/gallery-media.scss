@@ -1,0 +1,31 @@
+@include desktop-big {
+	.gallery {
+		max-width: 1140px;
+		padding: 80px 15px 45px;
+		margin: 0 auto;
+	}
+}
+
+@include laptop {
+	.gallery {
+		padding: 20px 15px 20px;
+	}
+}
+
+@include laptop {
+	.gallery {
+		&__items {
+			grid-gap: 10px 12px;
+		}
+
+		&__buttons {
+			gap: 10px;
+			margin-bottom: 15px;
+		}
+
+		&__button {
+			padding: 6px 12px;
+			font-size: 12px;
+		}
+	}
+}

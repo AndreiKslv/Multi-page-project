@@ -1,0 +1,22 @@
+.mail-link {
+	margin-bottom: 22px;
+	padding-left: 30px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 2;
+	color: $link-2;
+
+	position: relative;
+
+	&::before {
+		position: absolute;
+		top: 8px;
+		left: 0;
+
+		content: '';
+		width: 16px;
+		height: 12px;
+		background: url(./../images/common/mail.svg);
+	}
+}

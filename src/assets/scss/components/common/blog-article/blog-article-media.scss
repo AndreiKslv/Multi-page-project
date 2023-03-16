@@ -1,0 +1,64 @@
+@include mobile {
+	.blog-article {
+		&__articles {
+			justify-content: center;
+		}
+
+		&__tag-list {
+			gap: 10px 10px;
+		}
+
+		&__comment-text {
+			padding-right: 0;
+		}
+
+		&__articles-link:first-child {
+			margin-right: auto;
+		}
+
+		&__articles-link:last-child {
+			margin-left: auto;
+		}
+
+		&__title {
+			font-size: 18px;
+		}
+
+		&__img-info {
+			font-size: 10px;
+		}
+
+		&__img {
+			margin-bottom: 0;
+		}
+
+		&__text {
+			font-size: 12px;
+		}
+
+		&__blockquote {
+			margin: 0;
+		}
+
+		&__blockquote-box {
+			margin: 20px 32px 20px;
+		}
+
+		&__blockquote-text {
+			font-size: 14px;
+		}
+
+		&__tag-title {
+			font-size: 16px;
+		}
+
+		&__comment-text {
+			font-size: 14px;
+		}
+	}
+
+	.tag-item {
+		font-size: 11px;
+	}
+}
+

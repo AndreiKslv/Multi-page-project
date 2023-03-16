@@ -1,0 +1,15 @@
+@include tablet {
+	.slick-track {
+		gap: 10px;
+	}
+}
+
+@include mobile {
+	.contact-slider {
+		padding: 0 8px;
+	}
+
+	.slick-track {
+		gap: 5px;
+	}
+}

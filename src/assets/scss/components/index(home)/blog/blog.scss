@@ -1,0 +1,41 @@
+.blog {
+	padding: 45px 0 0;
+
+	&__title {
+		@extend %l-title;
+		max-width: 430px;
+		margin: 0 auto 30px;
+
+		text-align: center;
+	}
+	&__block {
+		display: flex;
+		flex-wrap: wrap;
+    	justify-content: center;
+		gap: 60px 30px;
+	}
+	
+	&__item {
+		max-width: 540px
+	}
+
+	&__img {
+		margin-bottom: 20px;
+	}
+
+	&__link-group {
+		margin-bottom: 7px;
+	}
+
+	&__link {
+		font-size: 14px;
+		line-height: 2;
+		color: $link-3;
+	}
+
+	&__title-block {
+		@extend %m-title;
+	}
+}
+ 
+  

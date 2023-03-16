@@ -1,0 +1,86 @@
+.rightside-menu {
+	max-width: 694px;
+	box-shadow: 0 0 14px 0;
+	background-color: $bg-1;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	z-index: 2;
+	transform: translateX(0);
+	transition: all .5s ease;
+
+	&.rightside-menu--close {
+		transform: translateX(166%);
+	}
+
+	&__button {
+		width: 36px;
+		height: 36px;
+		margin: 40px auto 30px 47px;
+
+		position: relative;
+
+		&:hover {
+			background-color: rgba(112, 112, 112, .1);
+			border-radius: 50%;
+		}
+	}
+
+	&__line {
+		position: absolute;
+		top: 17px;
+  		left: 5px;
+
+		width: 26px;
+		height: 2px;
+
+		border-radius: 1px;
+		background-color: $btn-line-2;
+	}
+
+	&__line:nth-child(1) {
+		transform: rotate(45deg);
+	}
+
+	&__line:nth-child(2) {
+		transform: rotate(-45deg);
+	}
+
+	&__content {
+		max-width: 483px;
+		padding-bottom: 100px;
+		margin-left: 116px;
+		margin-right: 95px;
+
+		text-align: center;
+	}
+	&__link {
+		margin-bottom: 40px;
+	}
+
+	&__title {
+		@extend %l-title;
+		margin-bottom: 28px;
+
+		position: relative;
+	}
+
+	&__title::after {
+		@extend %underline-title;
+		top: 60px;
+		left: 0;
+		right: 0;
+		width: 252px;
+		margin: 0 auto;
+	}
+
+
+
+	&__text {
+		margin-bottom: 75px;
+	}
+	&__img {}
+}
+ 

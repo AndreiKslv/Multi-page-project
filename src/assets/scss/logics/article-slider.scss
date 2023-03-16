@@ -1,0 +1,21 @@
+.article-slider {
+	&__box {
+		position: relative;
+	}
+
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		z-index: 1;
+		transform: translateY(-50%);
+	}
+
+	&__arrow--left {
+		left: 16px;
+	}
+
+	&__arrow--right {
+		right: 16px;
+	}
+}
+  

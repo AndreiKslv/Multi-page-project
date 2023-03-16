@@ -1,0 +1,20 @@
+@include mobile() {
+	.blog {
+		&__title {
+			max-width: 280px;
+			font-size: 24px;
+		}
+
+		&__title-block {
+			font-size: 18px;
+		}
+
+		&__link {
+			font-size: 12px;
+		}
+
+		&__img {
+			margin-bottom: 0;
+		}
+	}
+}

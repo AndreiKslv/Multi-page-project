@@ -1,0 +1,38 @@
+%xxl-title {
+	font-size: 110px;
+	line-height: 1.218;
+}
+
+%xl-title {
+	font-size: 60px;
+	line-height: 1.333;
+}
+
+%l-title {
+	font-size: 36px;
+	line-height: 1.416;
+}
+
+%m-title {
+	font-size: 24px;
+	line-height: 1.583;
+}
+
+%s-title {
+	font-size: 16px;
+	line-height: 1.437;
+}
+
+%underline-title {
+	position: absolute;
+	content: '';
+	height: 1px;
+	background-color: $underline-title;
+}
+
+%underline-title-2 {
+	position: absolute;
+	content: '';
+	height: 2px;
+	background-color: $underline-title;
+}

@@ -1,0 +1,92 @@
+.contact {
+	padding: 55px 0 100px;
+
+	&__title {
+		margin-bottom: 70px;
+		@extend %l-title;
+
+		position: relative;
+		&::after {
+			@extend %underline-title-2;
+			left: 0;
+			bottom: -40px;
+			right: 0;
+			max-width: 200px;
+			background-color: #6D7278;
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+
+		max-width: 825px;
+		margin-left: auto;
+	}
+
+	&__messenger {
+		display: flex;
+		align-items: center;
+		gap: 36px;
+
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		margin-bottom: 10px;
+	}
+
+	&__address {
+		display: flex;
+		flex-direction: column;
+
+		margin-bottom: 15px;
+	}
+	&__address-item {}
+
+	&__form {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	&__inputs {
+		flex-grow: 1;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	&__input {
+		flex-grow: 1;
+		padding: 6px 10px 6px 17px;
+		border: 1px solid $input-brd;
+		border-radius: 20px;
+	}
+
+	&__input::placeholder {
+		line-height: 2;
+		color: #a1a1a1;
+	}
+
+	&__textarea::placeholder {
+		line-height: 2;
+		color: #a1a1a1;
+	}
+
+	&__textarea {
+		width: 100%;
+		min-height: 125px;
+		resize: none;
+
+		padding: 14px 17px;
+		margin-bottom: 20px;
+
+		border: 1px solid $input-brd;
+		border-radius: 24px
+	}
+
+	&__button {
+		width: 180px;
+	}
+  }
+  

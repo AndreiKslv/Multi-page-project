@@ -1,0 +1,76 @@
+.aside {
+	width: 350px;
+	
+	&__form {
+		position: relative;
+		margin-bottom: 45px;
+	}
+
+	&__input {
+		width: 100%;
+		padding: 6px 42px 6px 18px;
+		border: 1px solid $input-brd-2;
+		border-radius: 20px;
+
+		&::placeholder {
+			font-size: 14px;
+			line-height: 2;
+			color: $ph-1;
+		}
+	}
+
+	&__button {
+		position: absolute;
+		top: 11px;
+    	right: 18px;
+
+		width: 20px;
+		height: 20px;
+
+		background: url(./../images/common/search.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&__title {
+		@extend %s-title;
+		margin-bottom: 15px;
+	}
+
+	&__block-caterogies, &__block-posts, &__block-tags {
+		margin-bottom: 50px;
+	}
+
+	&__categories-item {
+		& + & {
+			margin-top: 12px;
+		}
+	}
+	
+	&__posts-item {
+		& + & {
+			margin-top: 10px;
+		}
+	}
+
+	&__posts-date, &__posts-author {
+		font-size: 14px;
+		line-height: 2;
+		color: $link-1;
+	}
+
+	&__tags-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	&__messengers {
+		display: flex;
+		gap: 20px;
+	}
+}
+
+.aside-bottom {
+	display: none;
+}

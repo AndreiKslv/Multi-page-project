@@ -1,0 +1,28 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	&__list {
+		display: flex;
+		gap: 10px;
+	}
+
+	&__num {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 2;
+		color: $link-3;
+	}
+
+	&__num--active {
+		color: $link-2;
+	}
+
+	&__arrow--disabled {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+  

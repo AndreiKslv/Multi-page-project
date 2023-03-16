@@ -1,0 +1,46 @@
+@include mobile {
+	.process {
+		padding: 20px 10px 20px;
+	}
+}
+
+@include mobile {
+	.process {
+		&__box-line {
+			display: none;
+		}
+
+		&__box-item {
+			&::after {
+				display: none;
+			}
+		}
+
+		&__box-item + &__box-item {
+			display: none;
+		}
+
+		&__box-top {
+			justify-content: center;
+		}
+		
+		&__box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__box > &__box-item {
+			padding-top: 0;
+			margin-left: 0;
+		}
+
+		&__box > &__box-item + &__box-item {
+			display: block;
+		}
+
+		&__box-item {
+			padding-bottom: 40px;
+		}
+	}
+}

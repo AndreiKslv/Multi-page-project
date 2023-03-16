@@ -1,0 +1,93 @@
+@include desktop-big {
+	.promo {
+		&::after {
+			height: 72%;
+		}
+	}
+	.promo-slider {	
+	  
+		&__inner {
+		  justify-content: center;
+		}
+
+		&__img {
+			height: 600px;
+		}
+
+		&__title {
+			font-size: 80px;
+		}
+	}
+}
+
+@include desktop {
+	.promo {
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+	.promo-slider {	
+		&__img {
+			height: 410px;
+		}
+
+		&__title {
+			font-size: 65px;
+		}
+	}
+}
+
+@include tablet {
+	.promo-slider {
+		&__img {
+		  height: 300px; 
+		}
+
+		&__content {
+			padding-right: 0;
+		  }
+
+		&__title {
+			font-size: 50px;
+
+			&::after {
+				max-width: 130px;
+			}
+		}
+
+		&__text {
+			font-size: 13px;
+		  }
+	}
+
+	
+}
+
+@include mobile {
+	.promo-slider {
+		&__inner {
+		  flex-direction: column;
+		}
+
+		&__img {
+			order: 1;
+		}
+
+		&__content {
+			text-align: center;
+		  }
+
+		  &__title {
+			max-width: 280px;
+			margin: 40px auto 50px;
+			font-size: 50px;
+
+			&::after {
+				margin: 0 auto;
+			}
+		}
+
+		&__text {
+			max-width: 380px;
+		  }
+	}
+}

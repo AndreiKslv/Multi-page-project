@@ -1,0 +1,36 @@
+@include laptop {
+	.blog {
+		&__inner {
+			flex-direction: column;
+			max-width: 730px;
+			margin: 0 auto;
+		}
+
+		&__items {
+			max-width: 100%;
+		}
+
+		&__blockquote-box {
+			padding: 24px 25px;
+			margin-top: 50px;
+		}
+
+		&__blockquote {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+	}
+}
+
+@include mobile {
+	.blog {
+		&__blockquote-box {
+			margin-top: 0;
+		}
+
+		&__item {
+			margin-bottom: 0;
+		}
+	}
+}

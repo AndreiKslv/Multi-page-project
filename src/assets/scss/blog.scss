@@ -1,0 +1,26 @@
+@import 'common';
+
+
+
+@import 'components/common/header';
+@import 'components/common/breadcrumbs';
+@import 'components/blog';
+@import 'components/common/aside';
+@import 'components/common/mail-link/mail-link';
+@import 'components/common/footer';
+
+
+
+
+// Mini-Blocks
+@import 'components/common/rightside-menu';
+@import 'components/common/form';
+@import 'components/common/blog-article/blog-article';
+
+
+// Logics
+@import 'logics/burger-menu';
+@import 'logics/fancybox.scss';
+@import 'logics/slick.scss';
+@import 'logics/article-slider';
+@import 'logics/pagination';

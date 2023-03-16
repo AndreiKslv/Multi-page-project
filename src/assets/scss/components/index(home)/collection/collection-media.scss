@@ -1,0 +1,24 @@
+@include desktop {
+	.collection {
+		padding: 20px 15px 50px;
+	}
+}
+@include laptop {
+	.collection {
+		&__text {
+			max-width: 470px;
+		}
+	}
+}
+
+@include mobile {
+	.collection {
+		&__title {
+			max-width: 300px;
+
+			&::after {
+				max-width: 160px;
+			}
+		}
+	}
+}

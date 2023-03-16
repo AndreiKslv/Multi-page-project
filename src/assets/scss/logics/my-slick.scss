@@ -1,0 +1,33 @@
+.promo-slider .slick-dots  {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+
+	margin-top: 20px;
+	line-height: 0;
+	font-family: none;
+}
+
+.promo-slider {
+	position: relative;
+}
+
+.slick-dots button {
+	width: 8px;
+	height: 8px;
+
+	border-radius: 50%;
+	background-color: #363838;
+
+	font-size: 0;
+
+	transition: all .3s ease;
+}
+
+li.slick-active button {
+	background-color: #ffef35;
+	outline: none;
+}
+
+
+

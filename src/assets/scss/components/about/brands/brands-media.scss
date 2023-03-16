@@ -1,0 +1,17 @@
+@include desktop-big {
+	.brands {
+		max-width: 1140px;
+
+		&__inner {
+			gap: 30px;
+		}
+	}
+}
+
+@include tablet {
+	.brands {
+		&__inner {
+			gap: 10px;
+		}
+	}
+}

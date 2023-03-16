@@ -1,0 +1,52 @@
+@include tablet {
+	body.lock {
+		overflow: hidden;
+	}
+
+	main {
+		padding-top: 37px;
+	}
+
+	.header {
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: 100;
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+
+			content: '';
+			height: 100%;
+			background-color: #fff;
+			box-shadow: 0px -1px 8px 0px;
+		}
+
+
+
+		.burger-menu-list {
+			display: block;
+		}
+	}
+
+	.menu {
+		padding: 3px 0;
+
+		&__button, &__list {
+			display: none;
+		}
+
+		.burger-menu {
+			display: block;
+			z-index: 10;
+		}
+
+		&__logo-link {
+			margin-left: calc(50% - 52px);
+			z-index: 10;
+		}
+	}
+}

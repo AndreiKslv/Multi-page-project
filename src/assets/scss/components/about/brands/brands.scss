@@ -1,0 +1,12 @@
+.brands {
+	max-width: 1920px;
+	padding: 25px 15px 70px;
+	margin: 0 auto;
+
+	&__inner {
+		display: flex;
+		justify-content: center;
+		gap: 70px;
+	}
+  }
+  

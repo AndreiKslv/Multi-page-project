@@ -1,0 +1,21 @@
+@include desktop {
+	.footer {
+		&__info {
+			flex-shrink: 0;
+		}
+	}
+}
+
+@include mobile {
+	.footer {
+		&__top {
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+
+		&__messengers, &__info {
+			margin: 0;
+		}
+	}
+
+}

@@ -1,0 +1,36 @@
+@include desktop {
+	.interier {
+		&__flex {
+			min-height: 450px;
+		}
+	}
+}
+
+@include laptop {
+	.interier {
+		&__flex {
+			min-height: 350px;
+		}
+
+		&__title {
+			font-size: 45px;
+		}
+	}
+}
+
+@include tablet {
+	.interier {
+		&__title {
+			max-width: 280px;
+			font-size: 33px;
+		}
+	}
+}
+
+@include mobile {
+	.interier {
+		&__text {
+			font-size: 12px;
+		}
+	}
+}

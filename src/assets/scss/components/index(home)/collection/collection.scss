@@ -1,0 +1,27 @@
+.collection {
+	max-width: 1920px;
+	padding: 45px 15px 100px;
+	margin: 0 auto;
+	text-align: center;
+
+	&__title {
+		@extend %l-title;
+		margin: 0 auto 50px auto;
+
+		position: relative;
+
+		&::after {
+			@extend %underline-title;
+			max-width: 252px;
+			left: 0;
+			right: 0;
+			bottom: -25px;
+			margin: 0 auto;
+		}
+	}
+
+	&__text {
+		max-width: 730px;
+		margin: 0 auto 30px;
+	}
+}

@@ -1,0 +1,66 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.687;
+	color: $text-default;
+
+	// overflow-x: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+
+	min-height: 100%;
+}
+
+.container {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.button {
+	width: 160px;
+	height: 40px;
+	padding: 6px 12px;
+
+	border-radius: 21px;
+	background-color: $bg-3;
+
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.75;
+	color: $btn-text-1;
+}
+
+.title {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: $title-default;
+}
+
+a {
+	display: inline-block;
+	margin: 0;
+}
+
+.tag-item {
+	padding: 0 13px;
+	border: 1px solid $aside-link-brd;
+	border-radius: 14px;
+
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 2;
+	color: $link-5;
+}

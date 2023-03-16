@@ -1,0 +1,55 @@
+.interier {
+	background-image: url(./../images/pages/home/interier/sofa.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	position: relative;
+
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		content: '';
+		background-color: rgba(#fff, .8);
+	}
+
+	&__flex {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		min-height: 600px;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		position: relative;
+		z-index: 1;
+	}
+
+	&__title {
+		@extend %xl-title;
+		max-width: 530px;
+		margin-bottom: 45px;
+
+		position: relative;
+
+		&::after {
+			@extend %underline-title;
+			max-width: 200px;
+			left: 0;
+			right: 0;
+			bottom: -22px;
+		}
+	}
+
+	&__text {
+		max-width: 540px;
+	}
+  }
